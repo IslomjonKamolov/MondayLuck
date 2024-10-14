@@ -59,6 +59,7 @@ C_dropBox.forEach((dropBox, index) => {
 })
 
 
+window.addEventListener('resize', dropdownFun)
 
 
 const search_input = document.querySelector('.search__input')
