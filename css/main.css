@@ -2068,4 +2068,15 @@ ol {
     }
 }
 
+@media (max-width: 940px){
+    .CW__getStarted{
+        padding: 112px 100px 20px 24px;
+    }
+}
+@media (max-width: 877px){
+    .CW__getStarted{
+        padding: 112px 24px 20px 24px;
+    }
+}
+
 /* **************** CUSTOMERS PAGE ********************** */

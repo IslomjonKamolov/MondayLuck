@@ -275,34 +275,43 @@ const navTitles = document.querySelectorAll('.footer__nav__title')
 const footer_navList = document.querySelectorAll('.footer__nav__list')
 let footer_listItemIndex;
 
+// Hodisalarni tozalash uchun funksiyalar
+const removeNavTitleListeners = () => {
+    navTitles.forEach((title, titleIdx) => {
+        title.removeEventListener('click', dropdownHandler);
+    });
+}
+
+// Hodisalarni boshqaruvchi funksiyalar
+const dropdownHandler = (titleIdx) => {
+    footer_navList.forEach(nav_item => {
+        nav_item.style.height = '0px';
+    });
+    if (footer_listItemIndex === titleIdx) {
+        footer_listItemIndex = null;
+    } else {
+        footer_navList[titleIdx].style.height = '85.61px';
+        footer_listItemIndex = titleIdx;
+    }
+};
+
 
 const dropdownFun = () => {
     if (window.innerWidth <= 768) {
         footer_navList.forEach(nav_item => {
-            nav_item.style.height = '0'
-        })
-        navTitles.forEach((title, titleIdx) => {
-            title.addEventListener('click', () => {
-                footer_navList.forEach(nav_item => {
-                    nav_item.style.height = '0px'
-                })
+            nav_item.style.height = '0';
+        });
 
-                if (footer_listItemIndex === titleIdx) {
-                    console.log('close');
-                    footer_listItemIndex = null
-                } else {
-                    console.log(titleIdx, "index=", footer_listItemIndex);
-                    footer_navList[titleIdx].style.height = '85.61px'
-                    footer_listItemIndex = titleIdx
-                }
-            })
-        })
+        navTitles.forEach((title, titleIdx) => {
+            title.addEventListener('click', () => dropdownHandler(titleIdx));
+        });
     } else {
         footer_navList.forEach(nav_item => {
-            nav_item.style.height = 'auto'
-        })
+            nav_item.style.height = 'auto';
+        });
     }
 }
+
 
 
 // ****************** TOGGLE function
