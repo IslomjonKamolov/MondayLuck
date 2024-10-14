@@ -1,0 +1,2071 @@
+@font-face {
+    font-family: "Satoshi Variable";
+    src: url(../Fonts/Satoshi.ttf);
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url(../Fonts/Manrope/Manrope-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+}
+
+a,
+button {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+.header {
+    padding: 33px 0 19px 0;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+}
+
+.header__container {
+    max-width: 1380px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo__box {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    justify-content: start;
+    gap: 9px;
+    width: 100%;
+}
+
+.header__logo {
+    font-family: Satoshi Variable;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21.6px;
+}
+
+.lang__dropdown {
+    max-width: 83px;
+    width: 100%;
+    background: #fafafc;
+    border-radius: 12px;
+    position: relative;
+    transition: all 0.3s;
+}
+
+.lang__dropdown:hover .lang__list {
+    display: flex;
+    opacity: 1;
+    top: 40px;
+}
+
+.lang__main {
+    padding: 10px 6.5px 10px 10px;
+    display: flex;
+    align-items: center;
+    color: #B7C3D6;
+    border: none;
+    background: transparent;
+    justify-content: center;
+    gap: 2px;
+}
+
+.lang__icon {
+    width: 16px;
+    height: 16px;
+    display: flex;
+}
+
+.lang__dropArrow {
+    width: 25px;
+    height: 25px;
+    display: flex;
+}
+
+.lang__list {
+    top: -150px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    z-index: 2;
+    background: #FFF;
+    width: 40px;
+    box-shadow: 0 0 4px 0 rgb(119, 119, 119);
+    border-radius: 12px;
+    opacity: 0;
+    transition: opacity 0.5s, top 0.3s;
+}
+
+.lang__link {
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 4px 0;
+    font-size: 12px;
+    border-radius: 12px;
+}
+
+.lang__link:hover {
+    background: #E5E9F1;
+}
+
+.search__box {
+    display: flex;
+    border-radius: 30px;
+    overflow: hidden;
+    background: #fafafc;
+    max-width: 316px;
+    width: 100%;
+    padding: 16px 13px;
+}
+
+.search__input {
+    background: transparent;
+    width: 100%;
+    display: flex;
+    border: none;
+    font-family: Satoshi Variable;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18.9px;
+    outline: none;
+}
+
+.search__input::placeholder {
+    color: #C1C7D0;
+    font-family: Satoshi Variable;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18.9px;
+}
+
+.search__btn {
+    display: flex;
+    width: 18px;
+    height: 18px;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+}
+
+.navbar__box {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 28px;
+    justify-content: end;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 327px;
+    width: 100%;
+    gap: 25px;
+}
+
+.nav__item:last-child>a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.nav__link {
+    font-family: Satoshi Variable;
+    font-weight: 700;
+    line-height: 20px;
+    color: #9CA5B3;
+}
+
+.tools__box {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 5px;
+}
+
+.trashbin,
+.message,
+.bell {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: transparent;
+    border: none;
+}
+
+.profile__box {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: end;
+}
+
+.wallet {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    margin-top: -15px;
+    border: none;
+    padding: 7px;
+    background: #EDF4FF;
+}
+
+.user__profile {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    background: #C4C5C7;
+    border-radius: 50%;
+}
+
+.user__profile>img {
+    width: 40px;
+    transform: scale(1.1);
+    height: 55px;
+}
+
+.online__info {
+    width: 10px;
+    height: 10px;
+    border: 1px solid white;
+    background: #62F94D;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.header__join {
+    display: none;
+}
+
+.user__profile__box {
+    display: flex;
+    position: relative;
+}
+
+.profile__dropdown {
+    width: 25px;
+    height: 25px;
+    padding: 9px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.burger__btn {
+    display: none;
+}
+
+.favourites__btn,
+.trashbinR {
+    display: none;
+}
+
+@media (max-width: 933px) {
+    .profile__box {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 9px 0;
+    }
+
+    .header__join {
+        display: flex;
+        background: #202020;
+        width: 100%;
+        max-width: 90px;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        font-family: Manrope;
+        font-size: 14px;
+        color: #FFF;
+        font-weight: 500;
+        line-height: 19.12px;
+        border: none;
+        border-radius: 12px;
+        padding: 12px 18px;
+    }
+
+    .burger__btn {
+        display: flex;
+        width: 26px;
+        height: 40px;
+        background: transparent;
+        border: none;
+    }
+
+    .header__logo {
+        font-size: 14px;
+    }
+
+    .lang__dropdown {
+        max-width: 50px;
+        gap: 0;
+        padding: 10px 4.5px 10px 8.5px;
+    }
+
+    .lang__main {
+        font-size: 12px;
+        padding: 0;
+    }
+
+    .lang__icon {
+        display: none;
+    }
+
+    .lang__dropArrow {
+        width: 20px;
+        height: 20px;
+    }
+
+    .search__box {
+        max-width: none;
+        padding: 13px 15px;
+    }
+
+    .search__input {
+        font-size: 12px;
+    }
+
+    .search__input::placeholder {
+        font-size: 12px;
+    }
+
+    .search__btn {
+        width: 14px;
+        height: 14px;
+    }
+
+    .search__btn>img {
+        display: flex;
+        width: 14px;
+        height: 14px;
+    }
+
+    .navbar__box {
+        display: none;
+    }
+
+    .favourites__btn,
+    .trashbinR {
+        width: 35px;
+        height: 35px;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        padding: 10px;
+    }
+}
+
+/* HEADER END *************************************************************************************************************** */
+/* BIG NAV *************************************************************************************************************** */
+
+
+.bigNav {
+    max-width: 1380px;
+    position: relative;
+}
+
+.bigNav__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bitNav__item,
+.bigNav__item_Active {
+    padding: 11px 8px;
+    display: flex;
+    position: relative;
+}
+
+.bigNav__item_Active {
+    border-bottom: 2px solid #4790FF;
+}
+
+.bigNav__item_Active>a {
+    color: #202020;
+}
+
+.bigNav__link {
+    font-family: Satoshi Variable;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21.6px;
+    color: #9CA5B3;
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+.bigNav__link:hover {
+    color: #4790FF;
+}
+
+.bigNav__line {
+    width: 100%;
+    background: #F2F2F2;
+    height: 1px;
+    border: none;
+}
+
+.bigNavDrop {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px 0;
+    background: rgb(244, 244, 244);
+    border-radius: 10px;
+    position: absolute;
+    top: 35px;
+    z-index: -99;
+    opacity: 0;
+    width: 100%;
+    left: 0;
+    align-items: center;
+    box-shadow: 0 2px 5px 0 rgb(79, 79, 79);
+    transition: z-index 0.0s, opacity 0.3s;
+}
+
+.bigNavDrop__item {
+    font-family: Satoshi Variable;
+    font-weight: 700;
+    color: #242424;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+    padding: 0 8px;
+}
+
+.bigNavDrop__item:hover {
+    background: #c7c7c7;
+}
+
+.bigNav__link:hover+.bigNavDrop {
+    opacity: 1;
+    z-index: 1;
+}
+
+.bigNavDrop:hover {
+    opacity: 1;
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .bigNav {
+        display: none;
+    }
+
+    .logo__box {
+        gap: 4px;
+    }
+
+    .container {
+        padding: 0 12px;
+    }
+}
+
+/* BIG NAV END *********************************************************************************************************** */
+/* SERVICE START ********************************************************************************************************* */
+
+.service {
+    padding: 26px 0 54px 0;
+}
+
+.service__container {
+    max-width: 1380px;
+}
+
+.service__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 23px;
+}
+
+.service__title {
+    font-family: Satoshi Variable;
+    color: #202020;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 48.6px;
+}
+
+.service__turtorial {
+    font-family: Satoshi Variable;
+    color: #9CA5B3;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21.6px;
+}
+
+.service__filter__box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.main__filters {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.filter__list {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 5px;
+    background: #FAFAFC;
+    padding: 4px;
+    border-radius: 100px;
+}
+
+.filter__list__item {
+    background: transparent;
+    color: #9CA5B3;
+    padding: 8px 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    border-radius: 45px;
+    transition: all 0.3s;
+}
+
+.filter__list__item-Active {
+    background: #4790FF;
+    color: white;
+    padding: 8px 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    border-radius: 45px;
+}
+
+.filter__list__item:hover {
+    background: #f1f1f1;
+}
+
+.filter__list__item-Active:hover {
+    background: #4790FF;
+    color: white;
+    padding: 8px 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    border-radius: 45px;
+}
+
+.filter__name {
+    font-family: Satoshi Variable;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21.6px;
+}
+
+.filter__count {
+    color: #9CA5B3;
+    font-family: Satoshi Variable;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 20px;
+    background: white;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 24px;
+    min-width: 24px;
+    padding: 7.5px 5.5px;
+}
+
+.filter__count__active {
+    font-family: Satoshi Variable;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 20px;
+    background: white;
+    border-radius: 24px;
+    color: #4790FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 24px;
+    min-width: 24px;
+    padding: 7.5px 5.5px;
+}
+
+.secondary__filter {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 12px;
+}
+
+.sec__filter__btn {
+    font-family: Satoshi Variable;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    color: #9CA5B3;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.accept__orders__label {
+    background: #9CA5B3;
+    border-radius: 24px;
+    width: 36px !important;
+    display: flex;
+    padding: 2px;
+    height: 16px;
+    position: relative;
+    transition: all 0.3s;
+}
+
+.accept__orders {
+    display: none;
+}
+
+
+.checkbox__toggle {
+    width: 12px;
+    border-radius: 50%;
+    height: 12px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    background: white;
+    transition: all 0.3s;
+}
+
+.accept__orders:checked~.checkbox__toggle {
+    transform: translateX(20px);
+}
+
+.accept__orders__text {
+    font-family: Satoshi Variable;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21.6px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #202020;
+}
+
+.service__checkbox__parent {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-left: auto;
+}
+
+.service__checkbox {
+    accent-color: #202020;
+    border-radius: 4px;
+
+}
+
+.service_checkbox__label {
+    color: #202020;
+    font-family: Satoshi Variable;
+    font-size: 16px;
+    font-weight: 700;
+    user-select: none;
+    line-height: 21.6px;
+}
+
+.service__cards__box {
+    background: #F0F2F8;
+    border-radius: 24px;
+    padding: 20px;
+}
+
+.service-cards__box,
+.service-pause__box,
+.service-all__box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 13px;
+    margin-bottom: 20px;
+}
+
+.service-all__box,
+.service-pause__box {
+    display: none;
+}
+
+.service__card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.service-card__profile {
+    background: #EDF4FF;
+    border-radius: 16px;
+    padding: 12px 12px 141px 12px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.service-card__status {
+    padding: 5px 23px;
+    border-radius: 8px;
+    background: #4790FF;
+    font-family: Satoshi Variable;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18.9px;
+    color: #fff;
+}
+
+.service-card__status_P {
+    background: #FBFDFF;
+    color: #575E6A;
+    padding: 5px;
+    max-width: 86px;
+    width: 100%;
+    font-family: Satoshi Variable;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    border-radius: 8px;
+    line-height: 18.9px;
+}
+
+.service-card__pause__btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.service-card__title {
+    font-family: Satoshi Variable;
+    font-size: 20px;
+    font-weight: 700;
+    color: #202020;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+
+.service-card__text {
+    font-family: Satoshi Variable;
+    font-size: 14px;
+    font-weight: 500;
+    color: #9CA5B3;
+    margin-bottom: 18px;
+    line-height: 16.8px;
+}
+
+.service-card__info__box {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 12px;
+}
+
+.service-card__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #FAFAFC;
+    padding: 4px 12px 4px 8px;
+    border-radius: 12px;
+}
+
+.service-card__info__title {
+    font-family: Satoshi Variable;
+    color: #9CA5B3;
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    line-height: 18.9px;
+}
+
+.service-card__info__icon {
+    width: 26px;
+    height: 26px;
+    background: #EDF4FF;
+    padding: 7px;
+    border-radius: 50%;
+}
+
+.service-card__income__price {
+    font-family: Satoshi Variable;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27px;
+    color: #4790FF;
+}
+
+.service-card__sales__count,
+.service-card__views__count {
+    font-family: Satoshi Variable;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27px;
+    color: #202020;
+}
+
+.service-card__options__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 22px;
+}
+
+.service-card__edit,
+.service-card__delete {
+    font-family: Satoshi Variable;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18.9px;
+    display: flex;
+    gap: 5px;
+    color: #202020;
+    background: transparent;
+    border: 1px solid #F2F2F2;
+    border-radius: 12px;
+    padding: 14px;
+    width: 100%;
+    transition: all 0.3s;
+    justify-content: center;
+}
+
+.service-card__edit:hover {
+    border: 1px solid #202020;
+}
+
+.service-card__delete {
+    color: #9CA5B3;
+}
+
+.service-card__delete:hover {
+    color: #FF8E8E;
+    border: 1px solid #FF8E8E;
+}
+
+.service-show__more {
+    border: 1px solid #AEB5BF;
+    border-radius: 12px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    max-width: 220px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Satoshi Variable;
+    font-weight: 700;
+    color: #202020;
+    line-height: 21.6px;
+    transition: all 0.3s;
+}
+
+.service-show__more:hover {
+    background: #202020;
+    color: white;
+}
+
+.service__exit__btn {
+    width: 40px;
+    height: 32px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    padding: 12px;
+}
+
+@media (max-width: 1090px) {
+
+    .service-cards__box,
+    .service-pause__box,
+    .service-all__box {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 822px) {
+
+    .service-cards__box,
+    .service-pause__box,
+    .service-all__box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.main__filters__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .service__exit__btn {
+        display: flex;
+    }
+
+    .service__title__box {
+        display: flex;
+        gap: 2px;
+        align-items: center;
+    }
+
+    .service {
+        padding: 0;
+        padding-bottom: 54px;
+    }
+
+    .service__title {
+        font-size: 24px;
+        line-height: 32.4px;
+        white-space: nowrap;
+    }
+
+    .service__turtorial {
+        font-size: 12px;
+        line-height: 16.2px;
+    }
+
+    .service__box {
+        margin-bottom: 20px;
+        gap: 31px;
+    }
+
+    .main__filters {
+        flex-direction: column-reverse;
+        gap: 5px;
+    }
+
+    .filter__list {
+        justify-content: space-between;
+        width: 100%;
+        gap: 22px;
+    }
+
+    .filter__list__item,
+    .filter__list__item-Active {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main__filters__box {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        gap: 5px;
+        flex-direction: row-reverse;
+    }
+
+    .sec__filter__btn {
+        display: none;
+    }
+
+    .service__checkbox__parent {
+        background: #fafafc;
+        border-radius: 12px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        gap: 10px;
+        padding: 15px;
+        position: relative;
+        width: 100%;
+    }
+
+    .service_checkbox__label {
+        font-family: Satoshi Variable;
+        font-size: 12px;
+        font-weight: 700;
+        max-width: 141px;
+        line-height: 14.4px;
+    }
+
+    .service__moreInfo {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+    }
+
+    .secondary__filter {
+        background: #fafafc;
+        border-radius: 12px;
+        padding: 20px;
+        position: relative;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .accept__orders__text {
+        font-family: Satoshi Variable;
+        font-size: 12px;
+        font-weight: 700;
+        white-space: nowrap;
+        line-height: 16.2px;
+    }
+
+    .accept__orders__text>img {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+    }
+
+    .service__filter__box {
+        margin-bottom: 5px;
+    }
+
+    .service-show__more {
+        background: #202020;
+        color: #FFFFFF;
+        font-size: 14px;
+        line-height: 18.9px;
+        max-width: 100%;
+    }
+
+    .service-show__more:hover {
+        background: transparent;
+        color: #202020;
+        border: 1px solid #202020;
+    }
+}
+
+.service-addNew {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    background-image: url(../img/Services/addNew.png);
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.service-newProfileBox {
+    position: relative;
+    width: 81px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.service-new__profile {
+    width: 75px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 5px 0 rgb(199, 199, 199);
+}
+
+.service-new__profile>img {
+    display: flex;
+    transform: scale(1.4);
+    height: 100%;
+    border-radius: 50%;
+}
+
+.service-customize__btn {
+    position: absolute;
+    right: -5px;
+    top: 40px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: linear-gradient(to bottom right, #EAE2DD, #FEFEFE);
+    border-radius: 50%;
+}
+
+.service-addNew__title {
+    font-family: Satoshi Variable;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27px;
+    text-align: center;
+    max-width: 217px;
+    color: #202020;
+}
+
+.service-addNew__btn {
+    color: #FFFFFF;
+    padding: 14px;
+    width: 100%;
+    max-width: 228px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #6CB9FF, #BEE4FF);
+    border: none;
+    border-radius: 12px;
+}
+
+
+@media (max-width: 630px) {
+    .service__cards__box {
+        padding: 12px;
+    }
+
+    .service-newProfileBox{
+        width: 63px;
+    }
+
+    .service-cards__box,
+    .service-pause__box,
+    .service-all__box {
+        margin-bottom: 15px;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+    }
+
+    .service__card {
+        padding: 13px 8px 8px 8px;
+        position: relative;
+    }
+
+    .service-card__responsive__box {
+        display: flex;
+        gap: 8px;
+    }
+
+    .service-card__profile {
+        padding: 8px 21px 29px 8px;
+        margin-bottom: 5px;
+    }
+
+    .service-card__titles__box {
+        max-width: 300px;
+    }
+
+    .service-card__title {
+        font-family: Satoshi Variable;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 18.9px;
+        margin-bottom: 5px;
+    }
+
+    .service-card__text {
+        font-family: Satoshi Variable;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 14.4px;
+        margin-bottom: 0px;
+    }
+
+    .service-card__pause__btn {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        background: #FAFAFC;
+    }
+
+    .service-card__status,
+    .service-card__status_P {
+        font-family: Satoshi Variable;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16.2px;
+        padding: 4px 15px;
+    }
+
+    .service__container {
+        padding: 0;
+    }
+
+    .service__box,
+    .main__filters {
+        padding: 0 12px;
+    }
+
+    .service-card__info {
+        padding: 2px 12px 2px 4px;
+    }
+
+    .service-card__info__title {
+        font-size: 12px;
+        gap: 4px;
+        line-height: 16.2px;
+    }
+
+    .service-card__income__price,
+    .service-card__views__count,
+    .service-card__sales__count {
+        font-size: 14px;
+        line-height: 18.9px;
+    }
+
+    .service-card__info__box {
+        gap: 4px;
+        margin-bottom: 10px;
+    }
+
+    .service-card__edit,
+    .service-card__delete {
+        padding: 12px;
+        font-size: 14px;
+        line-height: 18.9px;
+    }
+
+    .service-new__profile {
+        width: 40px;
+        height: 40px;
+    }
+
+    .service-addNew {
+        padding: 20px 15px 15px 15px;
+        align-items: start;
+        gap: 15px;
+    }
+
+    .service-customize__btn {
+        top: 0;
+        width: 40px;
+        height: 40px;
+        right: -7px;
+    }
+
+    .service-addNew__responsive_flex {
+        display: flex;
+        gap: 33px;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .service-addNew__title {
+        font-size: 14px;
+        line-height: 18.9px;
+        max-width: 100%;
+    }
+
+    .service-addNew__btn {
+        max-width: 100%;
+        font-size: 14px;
+        line-height: 18.9px;
+        padding: 13px;
+    }
+}
+
+
+/* ******************** FOOTER ********************************** */
+
+.footer {
+    background: #202020;
+    padding: 125px 0 100px 0;
+}
+
+.footer__container {
+    max-width: 1260px;
+}
+
+.footer__nav__box {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin-bottom: 59px;
+}
+
+.footer__nav__title {
+    font-family: Satoshi Variable;
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 25px;
+    font-weight: 700;
+    line-height: 21.6px;
+}
+
+.footer__nav__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer__nav__link {
+    font-family: Satoshi Variable;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.2px;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    color: #BCBCBC;
+    transition: all 0.3s;
+}
+
+.footer__nav__link:hover {
+    color: rgb(48, 89, 255);
+}
+
+.footer__buttons__box {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 16px;
+}
+
+.signIn {
+    border: 1px solid #9CA5B3;
+    background: transparent;
+    border-radius: 12px;
+    max-width: 132px;
+    width: 100%;
+    padding: 9px;
+    color: #A6A6A6;
+    font-family: Manrope;
+    font-weight: 500;
+    line-height: 21.86px;
+    transition: all 0.3s;
+}
+
+.join {
+    border: 1px solid #FFFFFF;
+    background: transparent;
+    color: #FFFFFF;
+    font-family: Manrope;
+    font-weight: 500;
+    line-height: 21.86px;
+    border-radius: 12px;
+    padding: 9px;
+    max-width: 132px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: all 0.3s;
+}
+
+.join:hover,
+.signIn:hover {
+    background: #393939;
+    color: #fff;
+}
+
+.footer__arrow {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 50px 0 60px 0;
+    }
+
+    .footer__nav__box {
+        flex-direction: column;
+        gap: 23px;
+        margin-bottom: 48px;
+    }
+
+    .footer__nav {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .footer__nav__title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+
+    .footer__arrow {
+        display: flex;
+        width: 24px;
+        height: 24px;
+    }
+
+    .footer__nav__list {
+        margin-left: 20px;
+        height: 0;
+        transition: all 0.3s;
+    }
+
+    .footer__buttons__box {
+        width: 100%;
+        justify-content: start;
+    }
+
+    .signIn {
+        max-width: 100%;
+        padding: 14px;
+    }
+
+    .join {
+        max-width: 100%;
+        padding: 14px;
+    }
+}
+
+
+/* **************** CUSTOMERS PAGE ********************** */
+.customers {
+    background: #FAFAFC;
+    padding: 34px 0 54px 0;
+}
+
+.customers__container {
+    max-width: 1080px;
+}
+
+.customers__main__btn {
+    border: 1px solid #E1E1E3;
+    background: transparent;
+    max-width: 129px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    border-radius: 8px;
+    padding: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.curtomers__main__btn_SVG {
+    width: 14px;
+    height: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.customers__title {
+    font-family: Satoshi Variable;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 48.6px;
+    color: #202020;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.customers__text {
+    font-family: Satoshi Variable;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21.6px;
+    text-align: center;
+    color: #575E6A;
+    margin-bottom: 43px;
+}
+
+.customers__safety__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-family: Satoshi Variable;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32.4px;
+    color: #202020;
+    margin-bottom: 20px;
+}
+
+.customers-safety__icon {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background: white;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+.C-dropDown__box {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.C-dropDown__flex__box {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    width: 100%;
+}
+
+.C-dropDown {
+    background: white;
+    padding: 24px 39px 24px 24px;
+    border-radius: 12px;
+    width: 100%;
+}
+
+.C-dropDown__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Satoshi Variable;
+    font-size: 16px;
+    font-weight: 700;
+    color: #202020;
+    line-height: 21.6px;
+    margin-bottom: 0;
+    transition: all 0.3s;
+}
+
+.C-dropDown__title__box {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    cursor: pointer;
+    gap: 8px;
+}
+
+.C-dropDown__title__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background: #EDF4FF;
+    border-radius: 8px;
+}
+
+.C-dropDown__dropArrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    transition: all 0.3s;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.C-dropDown__text {
+    font-family: Satoshi Variable;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18.9px;
+    height: 0;
+    overflow: auto;
+    transition: all 0.3s;
+    color: #575E6A;
+}
+
+.C-work {
+    background: #FFFFFF;
+    padding: 40px 60px 56px;
+    border-radius: 24px;
+    margin-bottom: 30px;
+}
+
+.C-work__title {
+    font-family: Satoshi Variable;
+    font-size: 24px;
+    font-weight: 700;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    line-height: 32.4px;
+    margin-bottom: 24px;
+}
+
+.C-work__title__icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F1F3F9;
+    border-radius: 12px;
+}
+
+.C-work__texts {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 42px;
+    margin-bottom: 24px;
+}
+
+.C-work__text {
+    font-family: Satoshi Variable;
+    font-size: 14px;
+    color: #575E6A;
+    font-weight: 500;
+    width: 100%;
+    line-height: 18.9px;
+}
+
+.C-work__line {
+    border: none;
+    height: 1px;
+    background: #F2F2F2;
+    margin-bottom: 24px;
+}
+
+.C-work__categories__title {
+    font-family: Satoshi Variable;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21.6px;
+    color: #202020;
+    margin-bottom: 27px;
+}
+
+.C-work__categories__box {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 28px;
+}
+
+.C-work__categories__card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    min-height: 186px;
+    padding: 34px 13.5px 24px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.CWC__card__active {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 5px 10px 40px 2px #0000000D;
+}
+
+.CWC__card__img {
+    width: 76px;
+    height: 76px;
+    display: flex;
+}
+
+.CWC__card__img>img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.CWC__card__title {
+    font-family: Satoshi Variable;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21.6px;
+    text-align: center;
+    max-width: 123px;
+}
+
+.CWC__info__box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px 10px;
+}
+
+.CWC__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 16px;
+    background: #FAFAFC;
+    border-radius: 16px;
+}
+
+.CWC__info__title {
+    font-family: Satoshi Variable;
+    color: #202020;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18.9px;
+}
+
+.CWC__info__number {
+    font-family: Satoshi Variable;
+    color: #202020;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21.6px;
+}
+
+.CW__registration__box {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 102px;
+}
+
+.CW__getStarted {
+    background-image: url(../img/Customers/BG.png);
+    padding: 112px 186px 20px 24px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 36px;
+    max-width: 393px;
+}
+
+.CW__getStarted__title {
+    font-family: Satoshi Variable;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 38.4px;
+    color: #202020;
+    margin-bottom: 27px;
+}
+
+.CW__getStarted__btn {
+    font-family: Satoshi Variable;
+    border: none;
+    font-weight: 600;
+    background: #202020;
+    color: white;
+    padding: 14px 24px;
+    border-radius: 12px;
+    transition: all 0.3s;
+}
+
+.CW__getStarted__btn:hover {
+    opacity: 0.8;
+}
+
+.CW__balance {
+    max-width: 430px;
+}
+
+.CW__balance__title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: Satoshi Variable;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32.4px;
+}
+
+.CW__balance__title__icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 12px;
+}
+
+.CW__balance__text {
+    font-family: Satoshi Variable;
+    font-size: 14px;
+    color: #575E6A;
+    font-weight: 500;
+    line-height: 18.9px;
+}
+
+.CW__balance__link {
+    display: inline-flex;
+    font-family: Satoshi Variable;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18.9px;
+    color: #4790FF;
+}
+
+.CWC__responsive__box {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .customers {
+        background: #FAFAFC;
+        padding: 14px 0 34px 0;
+    }
+
+    .customers__main__btn {
+        margin-bottom: 8px;
+    }
+
+    .customers__title {
+        font-size: 24px;
+        line-height: 32.4px;
+        margin-bottom: 4px;
+    }
+
+    .customers__text {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 22px;
+    }
+
+    .customers__safety__title {
+        gap: 8px;
+        font-size: 16px;
+        line-height: 21px;
+        margin-bottom: 12px;
+    }
+
+    .customers-safety__icon {
+        width: 30px;
+        height: 30px;
+        padding: 7px;
+        border-radius: 8px;
+    }
+
+    .C-dropDown__box {
+        flex-direction: column;
+        gap: 5px;
+        margin-bottom: 10px;
+    }
+
+    .C-dropDown {
+        padding: 10px 15px;
+    }
+
+    .C-dropDown__flex__box {
+        gap: 5px;
+    }
+
+    .C-work {
+        padding: 0;
+        background: transparent;
+        border-radius: 12px;
+        margin-bottom: 20px;
+    }
+
+    .C-work__title {
+        font-size: 16px;
+        line-height: 21px;
+        margin-right: 60px;
+        margin-bottom: 15px;
+    }
+
+    .C-work__title__icon {
+        width: 30px;
+        height: 30px;
+        padding: 7px;
+        border-radius: 8px;
+    }
+
+    .C-work__texts {
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 16px;
+    }
+
+    .C-work__line {
+        margin-bottom: 12px;
+    }
+
+    .C-work__categories__title {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 0;
+    }
+
+    .CW__responsive__box {
+        padding: 10px 15px;
+        background: white;
+        border-radius: 12px;
+        margin-bottom: 10px;
+    }
+
+    .C-work__categories__box,
+    .CWC__info__box {
+        display: none;
+    }
+
+    .CWC__responsive__box {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .CWCR__box__card {
+        background: white;
+        padding: 20px 15px;
+        border-radius: 16px;
+        transition: all 0.3s;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    .CWCR__box__card__main {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0px;
+        transition: all 0.3s;
+    }
+
+    .CWCR__box__card__img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        margin-right: 8px;
+    }
+
+    .CWCR__box__card__title {
+        font-family: Satoshi Variable;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 21.6px;
+        color: #202020;
+    }
+
+    .CWCR__box__card__arrow {
+        transform: rotate(180deg);
+        margin-left: auto;
+        transition: all 0.3s;
+    }
+
+    .CWCR__box__card__info {
+        display: flex;
+        flex-direction: column;
+        transition: all 0.3s;
+        overflow: hidden;
+        gap: 4px;
+        height: 0;
+    }
+
+    .CWC__info {
+        padding: 6px 8px;
+    }
+
+    .CWC__info__title {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .CWC__info__number {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .CW__registration__box {
+        flex-direction: column-reverse;
+        gap: 24px;
+    }
+
+    .CW__balance{
+        max-width: 100%;
+    }
+
+    .CW__balance__title__icon {
+        width: 30px;
+        height: 30px;
+        padding: 7px;
+        border-radius: 7px;
+    }
+
+    .CW__balance__title {
+        gap: 8px;
+        font-size: 16px;
+        margin-bottom: 15px;
+        line-height: 21px;
+    }
+
+    .CW__balance__text {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .CW__getStarted {
+        padding: 35px 28px 20px 24px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .CW__getStarted__title {
+        max-width: 172px;
+        margin-bottom: 27px;
+    }
+
+    .CW__getStarted__btn {
+        width: 100%;
+        padding: 14px;
+        font-size: 16px;
+    }
+}
+
+/* **************** CUSTOMERS PAGE ********************** */
