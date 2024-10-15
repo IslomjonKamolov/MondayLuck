@@ -41,7 +41,7 @@ const dropdownFun = () => {
         navTitles.forEach((title, titleIdx) => {
             title.addEventListener('click', () => dropdownHandler(titleIdx));
         });
-    } else { 
+    } else {
         footer_navList.forEach(nav_item => {
             nav_item.style.height = 'auto';
         });
@@ -134,4 +134,18 @@ window.addEventListener('resize', dropdownFun);
 
 // Boshlang'ich holatni ishga tushiramiz
 searchPlaceholderFun();
-dropdownFun(); 
+dropdownFun();
+
+const menuToggle = document.querySelector('.burger__btn');
+const menu = document.getElementById('menu');
+const closeBtn = document.getElementById('close-btn');
+
+menuToggle.addEventListener('click', () => {
+    menu.style.top = "0"
+    document.body.style.overflow = 'hidden'
+});
+
+closeBtn.addEventListener('click', () => {
+    menu.style.top = '-900px'
+    document.body.style.overflow = 'auto'
+});

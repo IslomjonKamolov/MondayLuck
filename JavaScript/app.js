@@ -352,3 +352,18 @@ filterListItem.forEach((item, idx) => {
 
 AddCardFun()
 dropdownFun()
+
+
+const menuToggle = document.querySelector('.burger__btn');
+const menu = document.getElementById('menu');
+const closeBtn = document.getElementById('close-btn');
+
+menuToggle.addEventListener('click', () => {
+    menu.style.top = "0"
+    document.body.style.overflow = 'hidden'
+});
+
+closeBtn.addEventListener('click', () => {
+    menu.style.top = '-900px'
+    document.body.style.overflow = 'auto'
+});

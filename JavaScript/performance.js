@@ -3,7 +3,7 @@ const steps_dropdown_main = document.querySelectorAll('.steps__dropdown--main')
 const dropdown_arrow = document.querySelectorAll('.steps__dropdown--arrow')
 const dropdown_text = document.querySelectorAll('.steps__dropdown--text')
 
-const dropdownFun = () => {
+const dropDownFun = () => {
     steps_dropdown.forEach((item, idx) => {
         item.addEventListener('click', () => {
             steps_dropdown_main.forEach((mainItem, mainIdx) => {
@@ -36,4 +36,148 @@ const dropdownFun = () => {
     })
 }
 
-dropdownFun()
+dropDownFun()
+
+
+
+
+
+
+// ***********************************
+
+
+// ************ Drop down function
+const navTitles = document.querySelectorAll('.footer__nav__title');
+const footer_navList = document.querySelectorAll('.footer__nav__list');
+
+
+const footerDropFun = () => {
+    navTitles.forEach((item, idx) => {
+        item.addEventListener('click', () => {
+            if (window.innerWidth < 769) {
+                if (parseInt(footer_navList[idx].style.height) > 0) {
+                    footer_navList.forEach(nav => {
+                        nav.style.height = '0'
+                    })
+                    footer_navList[idx].style.height = '0'
+                } else {
+                    footer_navList.forEach(nav => {
+                        nav.style.height = '0'
+                    })
+                    footer_navList[idx].style.height = '85.61px'
+                }
+            } else {
+                footer_navList.forEach(nav => {
+                    nav.style.height = 'auto'
+                })
+            }
+        })
+    })
+}
+
+window.addEventListener('resize', () => {
+    if (window.innerWidth < 769) {
+        footer_navList.forEach(nav => {
+            nav.style.height = '0'
+        })
+    } else {
+        footer_navList.forEach(nav => {
+            nav.style.height = 'auto'
+        })
+    }
+})
+
+footerDropFun()
+
+const Pdrop = document.querySelectorAll('.p__reg--dropdown')
+const PdropMain = document.querySelectorAll('.p__reg--dropdown__main')
+const PdropText = document.querySelectorAll('.reg__drop__text')
+const PdropArrow = document.querySelectorAll('.reg__drop__arrow')
+
+
+Pdrop.forEach((item, index) => {
+    if (parseInt(PdropText[index].style.height) < 10) {
+        PdropMain[index].style.marginBottom = '17px'
+        PdropArrow[index].style.transform = 'rotate(180deg)'
+        PdropText[index].style.height = '1px'
+        PdropText[index].style.transition = 'all 0.3s'
+        setTimeout(() => {
+            PdropText[index].style.height = PdropText[index].scrollHeight + 'px'
+        }, 10);
+    } else {
+        PdropMain[index].style.marginBottom = '0'
+        PdropArrow[index].style.transform = 'rotate(0deg)'
+        PdropText[index].style.height = '0'
+        PdropText[index].style.transition = 'all 0.3s'
+    }
+    item.addEventListener('click', () => {
+        if (parseInt(PdropText[index].style.height) < 10) {
+            PdropMain[index].style.marginBottom = '17px'
+            PdropArrow[index].style.transform = 'rotate(180deg)'
+            PdropText[index].style.height = '1px'
+            PdropText[index].style.transition = 'all 0.3s'
+            setTimeout(() => {
+                PdropText[index].style.height = PdropText[index].scrollHeight + 'px'
+            }, 10);
+        } else {
+            PdropMain[index].style.marginBottom = '0'
+            PdropArrow[index].style.transform = 'rotate(0deg)'
+            PdropText[index].style.height = '0'
+            PdropText[index].style.transition = 'all 0.3s'
+        }
+    })
+})
+
+
+const safetyDrop = document.querySelectorAll('.safety__dropdown')
+const safetyDropText = document.querySelectorAll('.safety__dropdown--text')
+const safetyDropMain = document.querySelectorAll('.safety__dropdown--main')
+
+safetyDrop.forEach((item, index) => {
+    safetyDropText[index].style.height = '0'
+    safetyDropMain[index].style.marginBottom = '0'
+    safetyDropMain[index].style.transition = 'all 0.3s'
+    item.addEventListener('click', () => {
+        if (parseInt(safetyDropText[index].style.height) < 10) {
+            safetyDropText[index].style.height = '1px'
+            safetyDropText[index].style.transition = 'all 0.3s'
+            safetyDropMain[index].style.marginBottom = '17px'
+            setTimeout(() => {
+                safetyDropText[index].style.height = safetyDropText[index].scrollHeight + 'px'
+            }, 10);
+        } else {
+            safetyDropText[index].style.height = '0'
+            safetyDropText[index].style.transition = 'all 0.3s'
+            safetyDropMain[index].style.marginBottom = '0'
+        }
+    })
+})
+// ************ End of Drop down function
+
+
+const menuToggle = document.querySelector('.burger__btn');
+const menu = document.getElementById('menu');
+const closeBtn = document.getElementById('close-btn');
+
+menuToggle.addEventListener('click', () => {
+    menu.style.top = "0"
+    document.body.style.overflow = 'hidden'
+});
+
+closeBtn.addEventListener('click', () => {
+    menu.style.top = '-900px'
+    document.body.style.overflow = 'auto'
+});
+
+const search_input = document.querySelector('.search__input');
+const searchPlaceholderFun = () => {
+    if (window.innerWidth <= 768) {
+        search_input.placeholder = 'Search...';
+    } else {
+        search_input.placeholder = 'Search for services...';
+    }
+}
+
+searchPlaceholderFun()
+
+window.addEventListener('resize', searchPlaceholderFun)
