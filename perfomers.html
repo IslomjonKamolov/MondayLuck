@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monday/Performance</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container container">
+            <div class="logo__box">
+                <button class="burger__btn">
+                    <img src="./img/Header/BurgerIcon.svg" alt="menu">
+                </button>
+                <a href="./index.html" class="header__logo">Monday</a>
+                <div class="lang__dropdown">
+                    <button class="lang__main">
+                        <img class="lang__icon" src="./img/Header/Lang.svg" alt="🌐">
+                        <span class="lang__type">UZ</span>
+                        <img class="lang__dropArrow" src="./img/Header/DropArrow.svg" alt="▼">
+                    </button>
+                    <ul class="lang__list">
+                        <li class="lang__item"><button class="lang__link">EN</butt>
+                        </li>
+                        <li class="lang__item"><button class="lang__link">RU</butt>
+                        </li>
+                        <li class="lang__item"><button class="lang__link">UZ</butt>
+                        </li>
+                        <li class="lang__item"><button class="lang__link">CH</butt>
+                        </li>
+                        <li class="lang__item"><button class="lang__link">ES</butt>
+                        </li>
+                        <li class="lang__item"><button class="lang__link">FR</butt>
+                        </li>
+                        <li class="lang__item"><button class="lang__link">DE</butt>
+                        </li>
+                        <li class="lang__item"><button class="lang__link">IT</butt>
+                        </li>
+                    </ul>
+                </div>
+                <form action="/" class="search__box">
+
+                    <input type="text" class="search__input" placeholder="Search for services...">
+                    <button class="search__btn">
+                        <img src="./img/Header/Search.svg" alt="🔍">
+                    </button>
+                </form>
+                <button class="header__join">Join
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.6673 14V12.6667C10.6673 11.9594 10.3864 11.2811 9.88627 10.781C9.38617 10.281 8.70789 10 8.00065 10H4.00065C3.29341 10 2.61513 10.281 2.11503 10.781C1.61494 11.2811 1.33398 11.9594 1.33398 12.6667V14"
+                            stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M6.00065 7.33333C7.47341 7.33333 8.66732 6.13943 8.66732 4.66667C8.66732 3.19391 7.47341 2 6.00065 2C4.52789 2 3.33398 3.19391 3.33398 4.66667C3.33398 6.13943 4.52789 7.33333 6.00065 7.33333Z"
+                            stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M12.666 5.33594V9.33594" stroke="white" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M14.666 7.33594H10.666" stroke="white" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+            <div class="navbar__box">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#" class="nav__link">Orders</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Sellers</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">
+                            <img src="./img/Header/Hearts.svg" alt="❤">
+                            Favorites
+                        </a></li>
+                </ul>
+                <div class="tools__box">
+                    <button class="trashbin">
+                        <img src="./img/Header/Bag.svg" alt="🛍">
+                    </button>
+                    <button class="message">
+                        <img src="./img/Header/Message.svg" alt="💌">
+                    </button>
+                    <button class="bell">
+                        <img src="./img/Header/Bell.svg" alt="🔔">
+                    </button>
+                </div>
+                <div class="profile__box">
+                    <button class="wallet">
+                        <img src="./img/Header/Wallet.svg" alt="💰">
+                    </button>
+                    <div class="user__profile__box">
+                        <div class="user__profile">
+                            <img src="./img/Header/User.png" alt="user photo">
+                        </div>
+                        <div class="online__info"></div>
+                    </div>
+                    <button class="profile__dropdown">
+                        <img src="./img/Header/DropArrow.svg" alt="arrow">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ********* BIG NAV ********* -->
+    <nav class="bigNav container">
+        <ul class="bigNav__list">
+            <li class="bitNav__item bigNav__item_Active"><a href="#" class="bigNav__link">Social & SMM</a></li>
+            <li class="bitNav__item"><a href="#" class="bigNav__link">SEO</a></li>
+            <li class="bitNav__item"><a href="#" class="bigNav__link">Copywriting</a></li>
+            <li class="bitNav__item"><a href="#" class="bigNav__link">Web Development</a></li>
+            <li class="bitNav__item"><a href="#" class="bigNav__link">Scripts & Telegram Bots</a></li>
+            <li class="bitNav__item"><a href="#" class="bigNav__link">Logotypes & Branding</a></li>
+            <li class="bitNav__item"><a href="#" class="bigNav__link">Web & Mobile Design</a></li>
+            <li class="bitNav__item"><a href="#" class="bigNav__link">Scripts & Bots</a></li>
+            <hr style="transform: rotate(90deg); width: 26px; border: none; background: #C3C9D1; height: 1px;">
+            <li class="bitNav__item">
+                <button class="bigNav__link">
+                    All Services <img src="./img/Header/DropArrow.svg" alt="drop">
+                </button>
+                <ul class="bigNavDrop">
+                    <li class="bigNavDrop__item">Service 1</li>
+                    <li class="bigNavDrop__item">Service 2</li>
+                    <li class="bigNavDrop__item">Service 3</li>
+                </ul>
+            </li>
+        </ul>
+        <hr class="bigNav__line">
+    </nav>
+    <!-- *** -->
+    <section class="performance">
+        <div class="performance__container container">
+            <button class="customers__main__btn">
+                <!-- SVG -->
+                <div class="curtomers__main__btn_SVG">
+                    <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M5.16665 12.8333H9.83331C12.1783 12.8333 12.5983 11.8942 12.7208 10.7508L13.1583 6.08417C13.3158 4.66083 12.9075 3.5 10.4166 3.5H4.58331C2.09248 3.5 1.68415 4.66083 1.84165 6.08417L2.27915 10.7508C2.40165 11.8942 2.82165 12.8333 5.16665 12.8333Z"
+                            stroke="#202020" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M5.16675 3.49984V3.03317C5.16675 2.00067 5.16675 1.1665 7.03341 1.1665H7.96675C9.83342 1.1665 9.83342 2.00067 9.83342 3.03317V3.49984"
+                            stroke="#202020" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M8.66659 7.58333V8.16667C8.66659 8.1725 8.66659 8.1725 8.66659 8.17833C8.66659 8.81417 8.66075 9.33333 7.49992 9.33333C6.34492 9.33333 6.33325 8.82 6.33325 8.18417V7.58333C6.33325 7 6.33325 7 6.91659 7H8.08325C8.66659 7 8.66659 7 8.66659 7.58333Z"
+                            stroke="#202020" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M13.1292 6.4165C11.7817 7.3965 10.2417 7.97984 8.66675 8.17817" stroke="#202020"
+                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M2.02832 6.57422C3.34082 7.47255 4.82249 8.01505 6.33332 8.18422" stroke="#202020"
+                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <!-- SVG -->
+                For customers
+            </button>
+            <h2 class="customers__title">
+                Information for customers
+            </h2>
+            <p class="customers__text">The main objective of the service is to create a comfortable and safe environment
+                for remote work.</p>
+            <div class="performance__flex__box">
+                <!-- performance__flex__box = PF -->
+                <div class="PF__card">
+                    <div class="PF__card__img">
+                        <img src="./img/Performance/angelMan.png" alt="noob loser">
+                    </div>
+                    <div class="PF__card__content__box">
+                        <h3 class="PF__card__title">Beginners</h3>
+                        <p class="PF__card__text">Anyone can work as a freelancer on Monday - most jobs do not require
+                            high qualifications.</p>
+                    </div>
+                </div>
+                <div class="PF__card">
+                    <div class="PF__card__img">
+                        <img src="./img/Performance/Pgirl.png" alt="noob loser">
+                    </div>
+                    <div class="PF__card__content__box">
+                        <h3 class="PF__card__title">Specialists</h3>
+                        <p class="PF__card__text"> The service provides an opportunity to demonstrate your special
+                            knowledge and rare skills to carry out complex assignments.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="opportunities">
+                <h2 class="opportunities__title">
+                    <!-- SVG -->
+                    <div class="O__title__icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="40" rx="12" fill="#FAFAFC" />
+                            <path
+                                d="M25.2902 12.1371L25.2202 15.927C25.2102 16.447 25.5403 17.1371 25.9603 17.4471L28.4403 19.327C30.0303 20.527 29.7703 21.9971 27.8703 22.5971L24.6403 23.607C24.1003 23.777 23.5303 24.3671 23.3903 24.9171L22.6203 27.857C22.0103 30.177 20.4902 30.407 19.2302 28.367L17.4702 25.517C17.1502 24.997 16.3902 24.6071 15.7902 24.6371L12.4503 24.807C10.0603 24.927 9.38027 23.5471 10.9403 21.7271L12.9202 19.427C13.2902 18.997 13.4602 18.1971 13.2902 17.6571L12.2803 14.427C11.6903 12.527 12.7503 11.4771 14.6403 12.0971L17.5903 13.0671C18.0903 13.2271 18.8403 13.117 19.2603 12.807L22.3403 10.587C24.0003 9.38705 25.3302 10.0871 25.2902 12.1371Z"
+                                stroke="#575E6A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M29.9108 29.9987L26.8809 26.9688" stroke="#575E6A" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <!-- SVG -->
+                    Opportunities for performers
+                </h2>
+                <div class="O__flex__box">
+                    <!-- OFB = O__flex__box -->
+                    <div class="OFB__card">
+                        <!-- SVG -->
+                        <div class="OFB__card__icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21.7503 10.25L11.2087 20.7917L6.41699 16" stroke="#202020" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M25.583 14.0859L18.3955 21.2734L16.958 19.8359" stroke="#202020"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <!-- SVG -->
+                        <p class="OFB__card__title">
+                            You determine your employment and the number of working days yourself.
+                        </p>
+                    </div>
+                    <div class="OFB__card">
+                        <!-- SVG -->
+                        <div class="OFB__card__icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21.7503 10.25L11.2087 20.7917L6.41699 16" stroke="#202020" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M25.583 14.0859L18.3955 21.2734L16.958 19.8359" stroke="#202020"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <!-- SVG -->
+                        <p class="OFB__card__title">
+                            Complete ten tasks per day or one per month - it’s up to you!
+                        </p>
+                    </div>
+                    <div class="OFB__card">
+                        <!-- SVG -->
+                        <div class="OFB__card__icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21.7503 10.25L11.2087 20.7917L6.41699 16" stroke="#202020" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M25.583 14.0859L18.3955 21.2734L16.958 19.8359" stroke="#202020"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <!-- SVG -->
+                        <p class="OFB__card__title">
+                            Calmly go about your business, and we will find new tasks and vacancies for you while you
+                            study, work or are on the road.
+                        </p>
+                    </div>
+                </div>
+                <div class="O__info__flex__box">
+                    <!-- OIF = O__info__flex__box -->
+                    <div class="OIF__card">
+                        <!-- SVG -->
+                        <div class="OIF__card__icon">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6.66634 4.0026H9.33301C10.6663 4.0026 10.6663 3.33594 10.6663 2.66927C10.6663 1.33594 9.99967 1.33594 9.33301 1.33594H6.66634C5.99967 1.33594 5.33301 1.33594 5.33301 2.66927C5.33301 4.0026 5.99967 4.0026 6.66634 4.0026Z"
+                                    stroke="#4790FF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M10.6667 2.67969C12.8867 2.79969 14 3.61969 14 6.66635V10.6664C14 13.333 13.3333 14.6664 10 14.6664H6C2.66667 14.6664 2 13.333 2 10.6664V6.66635C2 3.62635 3.11333 2.79969 5.33333 2.67969"
+                                    stroke="#4790FF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <!-- SVG -->
+                        <h3 class="OIF__card__title">
+                            1000 tasks
+                        </h3>
+                        <p class="OIF__card__text">
+                            The amount of tasks published monthly on the website.
+                        </p>
+                    </div>
+                    <div class="OIF__card">
+                        <!-- SVG -->
+                        <div class="OIF__card__icon">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14.6663 8.0026C14.6663 11.6826 11.6797 14.6693 7.99967 14.6693C4.31967 14.6693 1.33301 11.6826 1.33301 8.0026C1.33301 4.3226 4.31967 1.33594 7.99967 1.33594C11.6797 1.33594 14.6663 4.3226 14.6663 8.0026Z"
+                                    stroke="#4790FF" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M10.4729 10.1211L8.40626 8.88781C8.04626 8.67448 7.75293 8.16115 7.75293 7.74115V5.00781"
+                                    stroke="#4790FF" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <!-- SVG -->
+                        <h3 class="OIF__card__title">
+                            10 minutes
+                        </h3>
+                        <p class="OIF__card__text">
+                            Frequency of new task appearance.
+                        </p>
+                    </div>
+                    <div class="OIF__card">
+                        <!-- SVG -->
+                        <div class="OIF__card__icon">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12.8667 5.27999V8.71334C12.8667 10.7667 11.6933 11.6466 9.93335 11.6466H4.07334C3.77334 11.6466 3.48668 11.62 3.22001 11.56C3.05334 11.5334 2.89335 11.4867 2.74668 11.4333C1.74668 11.06 1.14001 10.1933 1.14001 8.71334V5.27999C1.14001 3.22666 2.31334 2.34668 4.07334 2.34668H9.93335C11.4267 2.34668 12.5 2.98001 12.7867 4.42668C12.8333 4.69334 12.8667 4.96666 12.8667 5.27999Z"
+                                    stroke="#4790FF" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M14.8672 7.28007V10.7134C14.8672 12.7668 13.6939 13.6467 11.9339 13.6467H6.07391C5.58058 13.6467 5.13392 13.5801 4.74725 13.4334C3.95392 13.1401 3.41391 12.5334 3.22058 11.5601C3.48725 11.6201 3.77391 11.6467 4.07391 11.6467H9.93392C11.6939 11.6467 12.8672 10.7668 12.8672 8.71342V5.28007C12.8672 4.96674 12.8406 4.68676 12.7873 4.42676C14.0539 4.69342 14.8672 5.58674 14.8672 7.28007Z"
+                                    stroke="#4790FF" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M6.99878 8.75977C7.9708 8.75977 8.75879 7.97178 8.75879 6.99976C8.75879 6.02773 7.9708 5.23975 6.99878 5.23975C6.02676 5.23975 5.23877 6.02773 5.23877 6.99976C5.23877 7.97178 6.02676 8.75977 6.99878 8.75977Z"
+                                    stroke="#4790FF" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M3.1864 5.5332V8.46655" stroke="#4790FF" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M10.8143 5.53369V8.46704" stroke="#4790FF" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <!-- SVG -->
+                        <h3 class="OIF__card__title">
+                            4 000 000 uzs
+                        </h3>
+                        <p class="OIF__card__text">
+                            The most active performers earn per month.
+                        </p>
+                    </div>
+                    <div class="OIF__card">
+                        <!-- SVG -->
+                        <div class="OIF__card__icon">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1.33301 1.33594V12.6693C1.33301 13.7759 2.22634 14.6693 3.33301 14.6693H14.6663"
+                                    stroke="#4790FF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M3.33301 11.3307L6.39301 7.75741C6.89967 7.17074 7.79967 7.13073 8.34634 7.68406L8.97967 8.3174C9.52634 8.86407 10.4263 8.83073 10.933 8.24406L13.9997 4.66406"
+                                    stroke="#4790FF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <!-- SVG -->
+                        <h3 class="OIF__card__title">
+                            50% tasks
+                        </h3>
+                        <p class="OIF__card__text">
+                            Performed by performers who have been working on the service for less than 1 month.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- *** -->
+    <section class="start">
+        <div class="start__container container">
+            <h2 class="start__title">
+                <!-- SVG -->
+                <div class="start__title--icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="12" fill="white" />
+                        <path d="M21.7637 23.9375H16.7637" stroke="#575E6A" stroke-width="1.5" stroke-miterlimit="10"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M19.2598 21.5V26.5" stroke="#575E6A" stroke-width="1.5" stroke-miterlimit="10"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M20.1629 11.0181L20.1329 11.0881L17.2329 17.8181H14.3829C13.7029 17.8181 13.0529 17.9581 12.4629 18.2081L14.2129 14.0281L14.2529 13.9281L14.3229 13.7681C14.3429 13.7081 14.3629 13.6481 14.3929 13.5981C15.7029 10.5681 17.1829 9.87814 20.1629 11.0181Z"
+                            stroke="#575E6A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M25.5524 18.0156C25.1024 17.8756 24.6224 17.8156 24.1424 17.8156H17.2324L20.1324 11.0856L20.1624 11.0156C20.3124 11.0656 20.4524 11.1356 20.6024 11.1956L22.8124 12.1256C24.0424 12.6356 24.9024 13.1656 25.4224 13.8056C25.5224 13.9256 25.6024 14.0356 25.6724 14.1656C25.7624 14.3056 25.8324 14.4456 25.8724 14.5956C25.9124 14.6856 25.9424 14.7756 25.9624 14.8556C26.2324 15.6956 26.0724 16.7256 25.5524 18.0156Z"
+                            stroke="#575E6A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M29.0198 22.7003V24.6503C29.0198 24.8503 29.0098 25.0503 28.9998 25.2503C28.8098 28.7403 26.8598 30.5003 23.1598 30.5003H15.3598C15.1198 30.5003 14.8798 30.4803 14.6498 30.4503C11.4698 30.2403 9.76977 28.5403 9.55977 25.3603C9.52977 25.1303 9.50977 24.8903 9.50977 24.6503V22.7003C9.50977 20.6903 10.7298 18.9603 12.4698 18.2103C13.0698 17.9603 13.7098 17.8203 14.3898 17.8203H24.1498C24.6398 17.8203 25.1198 17.8903 25.5598 18.0203C27.5498 18.6303 29.0198 20.4903 29.0198 22.7003Z"
+                            stroke="#575E6A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M14.208 14.0312L12.458 18.2112C10.718 18.9612 9.49805 20.6913 9.49805 22.7013V19.7713C9.49805 16.9313 11.518 14.5612 14.208 14.0312Z"
+                            stroke="#575E6A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M29.0186 19.7716V22.7016C29.0186 20.5016 27.5586 18.6316 25.5586 18.0316C26.0786 16.7316 26.2286 15.7116 25.9786 14.8616C25.9586 14.7716 25.9286 14.6816 25.8886 14.6016C27.7486 15.5616 29.0186 17.5316 29.0186 19.7716Z"
+                            stroke="#575E6A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                </div>
+                <!-- SVG -->
+                How to start?
+            </h2>
+            <div class="start__steps--box">
+                <div class="start__steps">
+                    <div class="start__steps--img">
+                        <img src="./img/Performance/step1.png" alt="step one">
+                    </div>
+                    <div class="start__steps--content">
+                        <h3 class="start__steps--content__title">
+                            1. Register
+                        </h3>
+                        <p class="start__steps--content__text">
+                            To become a performer and receive tasks, you need to register and go through several
+                            mandatory steps: confirming contact information and filling out a profile. This is necessary
+                            to protect service users from fraud and unfair competition.
+                        </p>
+                        <div class="start__steps--dropdown__box">
+                            <div class="steps__dropdown">
+                                <div class="steps__dropdown--main">
+                                    <span class="steps__dropdown--title">Post your services.</span>
+                                    <!-- SVG -->
+                                    <div class="steps__dropdown--arrow">
+                                        <svg width="26" height="25" viewBox="0 0 26 25" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.5 11L13 15L17.5 11" stroke="#202020" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <!-- SVG -->
+                                </div>
+                                <p class="steps__dropdown--text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae sed esse suscipit.
+                                    Dolores, consectetur officiis! Asperiores vel excepturi nemo magni, dignissimos
+                                    officia cumque in amet molestiae sint nobis aperiam saepe laudantium nisi sit
+                                    aspernatur consequuntur, neque quas culpa optio eum quam. Distinctio, recusandae
+                                    numquam. Minus cumque officia possimus itaque amet.
+                                </p>
+                            </div>
+                            <div class="steps__dropdown">
+                                <div class="steps__dropdown--main">
+                                    <span class="steps__dropdown--title">Post your services.</span>
+                                    <!-- SVG -->
+                                    <div class="steps__dropdown--arrow">
+                                        <svg width="26" height="25" viewBox="0 0 26 25" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.5 11L13 15L17.5 11" stroke="#202020" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <!-- SVG -->
+                                </div>
+                                <p class="steps__dropdown--text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui officiis enim odio
+                                    iusto repudiandae temporibus nam ratione sequi aperiam voluptatibus incidunt,
+                                    laborum odit accusantium nobis sed quod. Doloribus ipsum qui velit maiores, suscipit
+                                    magnam et dolores sapiente facere, repudiandae molestias.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="start__steps">
+                    <div class="start__steps--img">
+                        <img src="./img/Performance/step2.png" alt="step two">
+                    </div>
+                    <div class="start__steps--content">
+                        <h3 class="start__steps--content__title">
+                            2. Agree to the task
+                        </h3>
+                        <p class="start__steps--content__text">
+                            Send counteroffers to customers. In your application, try to interest the customer:
+                            demonstrate that you are well versed in the topic, offer a solution to the problem, tell in
+                            a nutshell why you think that you will cope well with this assignment.
+                        </p>
+                        <div class="start__steps--dropdown__box">
+                            <div class="steps__dropdown">
+                                <div class="steps__dropdown--main">
+                                    <span class="steps__dropdown--title">Where to start working on the service?</span>
+                                    <!-- SVG -->
+                                    <div class="steps__dropdown--arrow">
+                                        <svg width="26" height="25" viewBox="0 0 26 25" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.5 11L13 15L17.5 11" stroke="#202020" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <!-- SVG -->
+                                </div>
+                                <p class="steps__dropdown--text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto dolores delectus
+                                    praesentium aperiam explicabo cupiditate corporis, sunt tempora veritatis sint
+                                    blanditiis quam magnam incidunt saepe quos dolorum expedita autem nesciunt culpa!
+                                    Dolorum quibusdam consequuntur saepe corporis tempora inventore aut eveniet eum
+                                    vitae nihil, commodi ea voluptate praesentium dolore quod possimus similique
+                                    aspernatur asperiores sunt itaque! Dolore, iste? Laborum hic maiores blanditiis,
+                                    error nobis libero. Aperiam quam, ad nam, accusamus repudiandae nemo voluptate cum
+                                    totam quo omnis dolore! Asperiores, inventore aperiam.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="start__steps">
+                    <div class="start__steps--img">
+                        <img src="./img/Performance/step3.png" alt="step two">
+                    </div>
+                    <div class="start__steps--content">
+                        <h3 class="start__steps--content__title">
+                            3. Get money
+                        </h3>
+                        <p class="start__steps--content__text">
+                            Meet deadlines and complete the task efficiently, in accordance with all customer
+                            conditions. After confirmation of completion, payment for the work will be transferred to
+                            your account.
+                        </p>
+                        <div class="start__steps--dropdown__box">
+                            <div class="steps__dropdown">
+                                <div class="steps__dropdown--main">
+                                    <span class="steps__dropdown--title">What to do after completing the task?</span>
+                                    <!-- SVG -->
+                                    <div class="steps__dropdown--arrow">
+                                        <svg width="26" height="25" viewBox="0 0 26 25" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.5 11L13 15L17.5 11" stroke="#202020" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <!-- SVG -->
+                                </div>
+                                <p class="steps__dropdown--text">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, natus? Quia qui
+                                    inventore omnis nesciunt sequi temporibus at atque. Explicabo, tempora animi ab
+                                    libero nulla dolores fugit, eligendi tempore reprehenderit laboriosam necessitatibus
+                                    ratione repudiandae rerum ad perspiciatis, corrupti perferendis nesciunt est
+                                    sapiente? Expedita dicta consectetur sit delectus similique vitae rem ipsa repellat
+                                    cupiditate deleniti, error mollitia temporibus natus enim ipsam.
+                                </p>
+                            </div>
+                            <div class="steps__dropdown">
+                                <div class="steps__dropdown--main">
+                                    <span class="steps__dropdown--title">How do you pay for a task?</span>
+                                    <!-- SVG -->
+                                    <div class="steps__dropdown--arrow">
+                                        <svg width="26" height="25" viewBox="0 0 26 25" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.5 11L13 15L17.5 11" stroke="#202020" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <!-- SVG -->
+                                </div>
+                                <p class="steps__dropdown--text">
+                                    All tasks are paid through the service.
+                                    <br><br>
+                                    The customer places his request and funds his account with an amount sufficient to
+                                    pay. As soon as the system has selected candidates for it, the fee is blocked on the
+                                    customer’s account. This is necessary so that we can guarantee payment to the
+                                    contractor.
+                                    <br><br>
+                                    When the task is completed, the customer checks the result. If everything is done
+                                    well and on time, he confirms completion. Only after this the reserved amount is
+                                    transferred from his account to the account of the performer. The task is closed and
+                                    archived.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- *** -->
+    <section class="safety">
+        <div class="safety__container container">
+            <h2 class="start__title">
+                <!-- SVG -->
+                <div class="start__title--icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="12" fill="white" />
+                        <path
+                            d="M18.49 10.2296L13.5 12.1096C12.35 12.5396 11.41 13.8996 11.41 15.1196V22.5496C11.41 23.7296 12.19 25.2796 13.14 25.9896L17.44 29.1996C18.85 30.2596 21.17 30.2596 22.58 29.1996L26.88 25.9896C27.83 25.2796 28.61 23.7296 28.61 22.5496V15.1196C28.61 13.8896 27.67 12.5296 26.52 12.0996L21.53 10.2296C20.68 9.91957 19.32 9.91957 18.49 10.2296Z"
+                            stroke="#575E6A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M20 20.5C21.1046 20.5 22 19.6046 22 18.5C22 17.3954 21.1046 16.5 20 16.5C18.8954 16.5 18 17.3954 18 18.5C18 19.6046 18.8954 20.5 20 20.5Z"
+                            stroke="#575E6A" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M20 20.5V23.5" stroke="#575E6A" stroke-width="1.5" stroke-miterlimit="10"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <!-- SVG -->
+                Guarantees and safety
+            </h2>
+            <div class="safety__flex__box">
+                <div class="safety__dropdown">
+                    <div class="safety__dropdown--main">
+                        <!-- SVG -->
+                        <div class="safety__dropdown--main__icon">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="30" height="30" rx="8" fill="#EDF4FF" />
+                                <path
+                                    d="M19.8667 12.28V15.7133C19.8667 17.7667 18.6933 18.6466 16.9333 18.6466H11.0733C10.7733 18.6466 10.4867 18.62 10.22 18.56C10.0533 18.5334 9.89335 18.4867 9.74668 18.4333C8.74668 18.06 8.14001 17.1933 8.14001 15.7133V12.28C8.14001 10.2267 9.31334 9.34668 11.0733 9.34668H16.9333C18.4267 9.34668 19.5 9.98001 19.7867 11.4267C19.8333 11.6933 19.8667 11.9667 19.8667 12.28Z"
+                                    stroke="#4790FF" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M21.8672 14.2801V17.7134C21.8672 19.7668 20.6939 20.6467 18.9339 20.6467H13.0739C12.5806 20.6467 12.1339 20.5801 11.7473 20.4334C10.9539 20.1401 10.4139 19.5334 10.2206 18.5601C10.4872 18.6201 10.7739 18.6467 11.0739 18.6467H16.9339C18.6939 18.6467 19.8672 17.7668 19.8672 15.7134V12.2801C19.8672 11.9667 19.8406 11.6868 19.7873 11.4268C21.0539 11.6934 21.8672 12.5867 21.8672 14.2801Z"
+                                    stroke="#4790FF" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M13.9988 15.7603C14.9708 15.7603 15.7588 14.9723 15.7588 14.0002C15.7588 13.0282 14.9708 12.2402 13.9988 12.2402C13.0268 12.2402 12.2388 13.0282 12.2388 14.0002C12.2388 14.9723 13.0268 15.7603 13.9988 15.7603Z"
+                                    stroke="#4790FF" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M10.1864 12.5332V15.4666" stroke="#4790FF" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M17.8143 12.5332V15.4666" stroke="#4790FF" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <!-- SVG -->
+                        Payment
+
+                        <!-- SVG -->
+                        <div class="safety__dropdown--main__arrow">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 11L12.5 15L17 11" stroke="#202020" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <!-- SVG -->
+                    </div>
+
+                    <p class="safety__dropdown--text">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque quam, quas itaque reiciendis
+                        exercitationem quibusdam molestias facilis numquam sunt corporis. Adipisci amet iusto in cumque,
+                        similique vero doloribus sit! Enim eligendi maxime aspernatur. Illum eaque accusamus ex? Quam
+                        molestiae nam provident voluptatum labore accusantium ipsa voluptas fugit illo ipsam amet cum
+                        rem laboriosam, officia voluptates quibusdam aut repellat exercitationem incidunt? Similique
+                        unde delectus accusamus quam enim saepe quibusdam deserunt quasi expedita, voluptatum quae
+                        voluptatibus repudiandae ab porro tempore. Quos eaque ratione quis facilis cum, ad ex provident
+                        consequuntur asperiores veritatis ea reprehenderit molestias accusamus veniam suscipit dolorem
+                        non eveniet fuga dignissimos dicta aperiam enim! Minus laudantium non reiciendis, quidem aliquid
+                        doloribus amet error quisquam odio! Alias provident, nostrum illum explicabo sint cupiditate
+                        corporis.
+                    </p>
+                </div>
+                <div class="safety__dropdown">
+                    <div class="safety__dropdown--main">
+                        <!-- SVG -->
+                        <div class="safety__dropdown--main__icon">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="30" height="30" rx="8" fill="#EDF4FF" />
+                                <path d="M12.3334 15.1338H17" stroke="#4790FF" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.3334 17.7998H15.2534" stroke="#4790FF" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M13.6667 10.9997H16.3334C17.6667 10.9997 17.6667 10.333 17.6667 9.66634C17.6667 8.33301 17 8.33301 16.3334 8.33301H13.6667C13 8.33301 12.3334 8.33301 12.3334 9.66634C12.3334 10.9997 13 10.9997 13.6667 10.9997Z"
+                                    stroke="#4790FF" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M17.6667 9.67969C19.8867 9.79969 21 10.6197 21 13.6664V17.6664C21 20.333 20.3333 21.6664 17 21.6664H13C9.66667 21.6664 9 20.333 9 17.6664V13.6664C9 10.6264 10.1133 9.79969 12.3333 9.67969"
+                                    stroke="#4790FF" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <!-- SVG -->
+                        Arbitration
+
+                        <!-- SVG -->
+                        <div class="safety__dropdown--main__arrow">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 11L12.5 15L17 11" stroke="#202020" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <!-- SVG -->
+                    </div>
+
+                    <p class="safety__dropdown--text">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque quam, quas itaque reiciendis
+                        exercitationem quibusdam molestias facilis numquam sunt corporis. Adipisci amet iusto in cumque,
+                        similique vero doloribus sit! Enim eligendi maxime aspernatur. Illum eaque accusamus ex? Quam
+                        molestiae nam provident voluptatum labore accusantium ipsa voluptas fugit illo ipsam amet cum
+                        rem laboriosam, officia voluptates quibusdam aut repellat exercitationem incidunt? Similique
+                        unde delectus accusamus quam enim saepe quibusdam deserunt quasi expedita, voluptatum quae
+                        voluptatibus repudiandae ab porro tempore. Quos eaque ratione quis facilis cum, ad ex provident
+                        consequuntur asperiores veritatis ea reprehenderit molestias accusamus veniam suscipit dolorem
+                        non eveniet fuga dignissimos dicta aperiam enim! Minus laudantium non reiciendis, quidem aliquid
+                        doloribus amet error quisquam odio! Alias provident, nostrum illum explicabo sint cupiditate
+                        corporis.
+                    </p>
+                </div>
+            </div>
+            <div class="safety__earnings--box">
+                <h3 class="safety__title">
+                    <!-- SVG -->
+                    <div class="safety__title--icon">
+                        <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0.5" width="40" height="40" rx="12" fill="#F1F3F9" />
+                            <path d="M16.67 22H12C10.9 22 10 22.9 10 24V30H16.67V22Z" stroke="#575E6A"
+                                stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M21.33 18H18.66C17.56 18 16.66 18.9 16.66 20V30H23.33V20C23.33 18.9 22.44 18 21.33 18Z"
+                                stroke="#575E6A" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M28 25H23.33V30H30V27C30 25.9 29.1 25 28 25Z" stroke="#575E6A" stroke-width="1.5"
+                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M20.5202 10.0669L21.0502 11.1269C21.1202 11.2769 21.3102 11.4169 21.4702 11.4369L22.4302 11.5969C23.0402 11.6969 23.1902 12.1469 22.7502 12.5769L22.0002 13.3269C21.8702 13.4569 21.8002 13.6969 21.8402 13.8669L22.0502 14.7869C22.2202 15.5169 21.8302 15.7969 21.1902 15.4169L20.2902 14.8869C20.1302 14.7869 19.8602 14.7869 19.7002 14.8869L18.8002 15.4169C18.1602 15.7969 17.7702 15.5169 17.9402 14.7869L18.1502 13.8669C18.1902 13.6969 18.1202 13.4469 17.9902 13.3269L17.2502 12.5869C16.8102 12.1469 16.9502 11.7069 17.5702 11.6069L18.5302 11.4469C18.6902 11.4169 18.8802 11.2769 18.9502 11.1369L19.4802 10.0769C19.7702 9.49687 20.2302 9.49689 20.5202 10.0669Z"
+                                stroke="#575E6A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <!-- SVG -->
+                    Your rating is a guarantee of good earnings
+                </h3>
+                <p class="safety__text">
+                    The more projects you successfully complete, the higher your performer rating. A high rating opens
+                    up
+                    access to more profitable projects and increases your chances of getting a job.
+                </p>
+                <div class="safety__rating__box">
+                    <div class="safety__rating__card">
+                        <div class="rating__card--img">
+                            <img src="./img/Performance/Newbie.png" alt="newbie">
+                        </div>
+                        <h4 class="rating__card--title">
+                            Newbie
+                        </h4>
+                        <p class="rating__card--text">
+                            You have a low rating because you are just getting started, there is still a lot to come!
+                        </p>
+                    </div>
+                    <div class="safety__rating__card">
+                        <div class="rating__card--img">
+                            <img src="./img/Performance/Experienced.png" alt="Experinced">
+                        </div>
+                        <h4 class="rating__card--title">
+                            Experienced
+                        </h4>
+                        <p class="rating__card--text">
+                            By completing tasks and receiving good reviews, you increase your rating.
+                        </p>
+                    </div>
+                    <div class="safety__rating__card">
+                        <div class="rating__card--img">
+                            <img src="./img/Performance/Pro.png" alt="Experinced">
+                        </div>
+                        <h4 class="rating__card--title">
+                            Professional
+                        </h4>
+                        <p class="rating__card--text">
+                            When you have a high rating, you receive more orders and therefore have higher income.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- *** -->
+    <section class="succes">
+        <div class="succes__container container">
+            <h2 class="succes__title">
+                <!-- SVG -->
+                <svg class="succes__title--icon" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="12" fill="white" />
+                    <path
+                        d="M27 17C27 18.45 26.57 19.78 25.83 20.89C24.75 22.49 23.04 23.62 21.05 23.91C20.71 23.97 20.36 24 20 24C19.64 24 19.29 23.97 18.95 23.91C16.96 23.62 15.25 22.49 14.17 20.89C13.43 19.78 13 18.45 13 17C13 13.13 16.13 10 20 10C23.87 10 27 13.13 27 17Z"
+                        stroke="#575E6A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M29.2501 26.4684L27.6001 26.8584C27.2301 26.9484 26.9401 27.2284 26.8601 27.5984L26.5101 29.0685C26.3201 29.8685 25.3001 30.1085 24.7701 29.4785L20.0001 23.9984L15.2301 29.4884C14.7001 30.1184 13.6801 29.8784 13.4901 29.0784L13.1401 27.6084C13.0501 27.2384 12.7601 26.9484 12.4001 26.8684L10.7501 26.4785C9.99008 26.2985 9.72008 25.3484 10.2701 24.7984L14.1701 20.8984C15.2501 22.4984 16.9601 23.6285 18.9501 23.9185C19.2901 23.9785 19.6401 24.0085 20.0001 24.0085C20.3601 24.0085 20.7101 23.9785 21.0501 23.9185C23.0401 23.6285 24.7501 22.4984 25.8301 20.8984L29.7301 24.7984C30.2801 25.3384 30.0101 26.2884 29.2501 26.4684Z"
+                        stroke="#575E6A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M20.58 13.98L21.17 15.16C21.25 15.32 21.46 15.48 21.65 15.51L22.72 15.69C23.4 15.8 23.56 16.3 23.07 16.79L22.24 17.62C22.1 17.76 22.02 18.03 22.07 18.23L22.31 19.26C22.5 20.07 22.07 20.39 21.35 19.96L20.35 19.37C20.17 19.26 19.87 19.26 19.69 19.37L18.69 19.96C17.97 20.38 17.54 20.07 17.73 19.26L17.97 18.23C18.01 18.04 17.94 17.76 17.8 17.62L16.97 16.79C16.48 16.3 16.64 15.81 17.32 15.69L18.39 15.51C18.57 15.48 18.78 15.32 18.86 15.16L19.45 13.98C19.74 13.34 20.26 13.34 20.58 13.98Z"
+                        stroke="#575E6A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <!-- SVG -->
+                How to become a successful performer?
+            </h2>
+            <div class="succes__grid__box">
+                <div class="grid__box--card">
+                    <!-- SVG -->
+                    <svg class="grid__box--card__icon" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="12" fill="#EDF4FF" />
+                        <path d="M20.8145 16.8828H26.0645" stroke="#4790FF" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M14.8242 16.8828L15.5742 17.6328L17.8242 15.3828" stroke="#4790FF" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M20.8145 23.8828H26.0645" stroke="#4790FF" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M14.8242 23.8828L15.5742 24.6328L17.8242 22.3828" stroke="#4790FF" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M17.4443 30H23.4443C28.4443 30 30.4443 28 30.4443 23V17C30.4443 12 28.4443 10 23.4443 10H17.4443C12.4443 10 10.4443 12 10.4443 17V23C10.4443 28 12.4443 30 17.4443 30Z"
+                            stroke="#4790FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <!-- SVG -->
+                    <div class="grid__box--card__content">
+                        <h4 class="box__content--title">Complete tasks</h4>
+                        <p class="box__content--text">
+                            Tasks are requests from customers, which by completing you increase your rating.
+                        </p>
+                    </div>
+                </div>
+                <div class="grid__box--card">
+                    <!-- SVG -->
+                    <svg class="grid__box--card__icon" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="12" fill="#EDF4FF" />
+                        <path
+                            d="M30.4697 28V14C30.4697 12 29.4697 11 27.4697 11H23.4697C21.4697 11 20.4697 12 20.4697 14V28C20.4697 30 21.4697 31 23.4697 31H27.4697C29.4697 31 30.4697 30 30.4697 28Z"
+                            stroke="#4790FF" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M20.4697 15H25.4697" stroke="#4790FF" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M20.4697 27H24.4697" stroke="#4790FF" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M20.4697 22.9531L25.4697 23.0031" stroke="#4790FF" stroke-width="1.5"
+                            stroke-linecap="round" />
+                        <path d="M20.4697 19H23.4697" stroke="#4790FF" stroke-width="1.5" stroke-linecap="round" />
+                        <path
+                            d="M14.4903 11C12.8603 11 11.5303 12.33 11.5303 13.95V26.91C11.5303 27.36 11.7203 28.04 11.9503 28.43L12.7703 29.79C13.7103 31.36 15.2603 31.36 16.2003 29.79L17.0203 28.43C17.2503 28.04 17.4403 27.36 17.4403 26.91V13.95C17.4403 12.33 16.1103 11 14.4903 11Z"
+                            stroke="#4790FF" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M17.4403 16H11.5303" stroke="#4790FF" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                    <!-- SVG -->
+                    <div class="grid__box--card__content">
+                        <h4 class="box__content--title">Quality above all!</h4>
+                        <p class="box__content--text">
+                            Only those performers who perform each task efficiently make it to the first positions in
+                            the rating. If you chase profit at the expense of quality, you are unlikely to see yourself
+                            at the top.
+                        </p>
+                    </div>
+                </div>
+                <div class="grid__box--card">
+                    <!-- SVG -->
+                    <svg class="grid__box--card__icon" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="12" fill="#EDF4FF" />
+                        <path d="M22 24.1631L18.04 20.2031" stroke="#4790FF" stroke-width="1.5" stroke-miterlimit="10"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M21.96 20.2422L18 24.2022" stroke="#4790FF" stroke-width="1.5" stroke-miterlimit="10"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M18 14H22C24 14 24 13 24 12C24 10 23 10 22 10H18C17 10 16 10 16 12C16 14 17 14 18 14Z"
+                            stroke="#4790FF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path
+                            d="M24 12.0156C27.33 12.1956 29 13.4256 29 17.9956V23.9956C29 27.9956 28 29.9956 23 29.9956H17C12 29.9956 11 27.9956 11 23.9956V17.9956C11 13.4356 12.67 12.1956 16 12.0156"
+                            stroke="#4790FF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                    <!-- SVG -->
+                    <div class="grid__box--card__content">
+                        <h4 class="box__content--title">Don't take on work you can't do</h4>
+                        <p class="box__content--text">
+                            At best, you will have to refuse this job, which will reduce your rating. At worst, you will
+                            earn a bad review and ruin your reputation.
+                        </p>
+                    </div>
+                </div>
+                <div class="grid__box--card">
+                    <!-- SVG -->
+                    <svg class="grid__box--card__icon" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="12" fill="#EDF4FF" />
+                        <path
+                            d="M19.97 30C25.4928 30 29.97 25.5228 29.97 20C29.97 14.4772 25.4928 10 19.97 10C14.4471 10 9.96997 14.4772 9.96997 20C9.96997 25.5228 14.4471 30 19.97 30Z"
+                            stroke="#4790FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M15.21 24C16.26 25.51 18.02 26.5 20 26.5C21.98 26.5 23.73 25.51 24.79 24"
+                            stroke="#4790FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <circle cx="16" cy="19" r="1" fill="#4790FF" />
+                        <circle cx="24" cy="19" r="1" fill="#4790FF" />
+                    </svg>
+                    <!-- SVG -->
+                    <div class="grid__box--card__content">
+                        <h4 class="box__content--title">Be polite!</h4>
+                        <p class="box__content--text">
+                            Even if you think that the customer is wrong, do not lose your composure. Politeness is the
+                            tactic of a competent specialist, but rudeness will only earn you a negative review or even
+                            a ban.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- *** -->
+    <section class="p__reg">
+        <div class="p__reg__container container">
+            <div class="p__reg--dropdown">
+                <button class="p__reg--dropdown__main">
+                    <!-- SVG -->
+                    <div class="reg__drop__icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="40" rx="12" fill="#F1F3F9" />
+                            <path
+                                d="M17.5 21.7522C17.5 22.7222 18.25 23.5022 19.17 23.5022H21.05C21.85 23.5022 22.5 22.8222 22.5 21.9722C22.5 21.0622 22.1 20.7322 21.51 20.5222L18.5 19.4722C17.91 19.2622 17.51 18.9422 17.51 18.0222C17.51 17.1822 18.16 16.4922 18.96 16.4922H20.84C21.76 16.4922 22.51 17.2722 22.51 18.2422"
+                                stroke="#575E6A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M20 15.5V24.5" stroke="#575E6A" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M30 20C30 25.52 25.52 30 20 30C14.48 30 10 25.52 10 20C10 14.48 14.48 10 20 10"
+                                stroke="#575E6A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M30 14V10H26" stroke="#575E6A" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M25 15L30 10" stroke="#575E6A" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+
+                    </div>
+                    <!-- SVG -->
+                    <h5 class="reg__drop__title">How to withdraw funds?</h5>
+                    <!-- SVG -->
+                    <div class="reg__drop__arrow">
+                        <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.5 11L13 15L17.5 11" stroke="#202020" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <!-- SVG -->
+                </button>
+                <p class="reg__drop__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum illo voluptas molestiae eum, quo in
+                    quia at harum rem animi nulla? Consequatur illum saepe minima veniam explicabo laboriosam
+                    dignissimos vel? Hic illo eius in quae ad deleniti nulla dignissimos vitae, sunt non? Incidunt
+                    laudantium, velit at explicabo nam ea voluptate quia quas saepe ex libero? Pariatur itaque,
+                    consectetur facere nam sit sequi ab impedit aut debitis repudiandae quam, dicta aliquam.
+                </p>
+            </div>
+            <div class="p__reg--dropdown">
+                <button class="p__reg--dropdown__main">
+                    <!-- SVG -->
+                    <div class="reg__drop__icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="40" rx="12" fill="#F1F3F9" />
+                            <path d="M26.5 27.5H22.5" stroke="#575E6A" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M24.5 29.5V25.5" stroke="#575E6A" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M20.1596 18.87C20.0596 18.86 19.9396 18.86 19.8296 18.87C17.4496 18.79 15.5596 16.84 15.5596 14.44C15.5496 11.99 17.5396 10 19.9896 10C22.4396 10 24.4296 11.99 24.4296 14.44C24.4296 16.84 22.5296 18.79 20.1596 18.87Z"
+                                stroke="#575E6A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M19.99 29.8097C18.17 29.8097 16.36 29.3497 14.98 28.4297C12.56 26.8097 12.56 24.1697 14.98 22.5597C17.73 20.7197 22.24 20.7197 24.99 22.5597"
+                                stroke="#575E6A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <!-- SVG -->
+                    <h5 class="reg__drop__title">What is an Affiliate program?</h5>
+                    <!-- SVG -->
+                    <div class="reg__drop__arrow">
+                        <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.5 11L13 15L17.5 11" stroke="#202020" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <!-- SVG -->
+                </button>
+                <p class="reg__drop__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum illo voluptas molestiae eum, quo in
+                    quia at harum rem animi nulla? Consequatur illum saepe minima veniam explicabo laboriosam
+                    dignissimos vel? Hic illo eius in quae ad deleniti nulla dignissimos vitae, sunt non? Incidunt
+                    laudantium, velit at explicabo nam.
+                </p>
+            </div>
+            <div class="p__getStarted">
+                <h3 class="p__getStarted__title">Get started right now!</h3>
+                <button class="p__getStarted__btn">Go to registration </button>
+            </div>
+        </div>
+    </section>
+    <script src="./JavaScript/performance.js"></script>
+</body>
+
+</html>

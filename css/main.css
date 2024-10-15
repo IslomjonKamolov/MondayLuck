@@ -1183,7 +1183,7 @@ ol {
         padding: 12px;
     }
 
-    .service-newProfileBox{
+    .service-newProfileBox {
         width: 63px;
     }
 
@@ -1874,7 +1874,7 @@ ol {
     .customers__text {
         font-size: 14px;
         line-height: 18px;
-        margin-bottom: 22px;
+        margin-bottom: 16px;
     }
 
     .customers__safety__title {
@@ -2027,7 +2027,7 @@ ol {
         gap: 24px;
     }
 
-    .CW__balance{
+    .CW__balance {
         max-width: 100%;
     }
 
@@ -2068,15 +2068,799 @@ ol {
     }
 }
 
-@media (max-width: 940px){
-    .CW__getStarted{
+@media (max-width: 940px) {
+    .CW__getStarted {
         padding: 112px 100px 20px 24px;
     }
 }
-@media (max-width: 877px){
-    .CW__getStarted{
+
+@media (max-width: 877px) {
+    .CW__getStarted {
         padding: 112px 24px 20px 24px;
     }
 }
 
 /* **************** CUSTOMERS PAGE ********************** */
+/* **************** PERFORMENCE PAGE ******************** */
+
+.performance {
+    padding: 34px 0 15px 0;
+    background: #FAFAFC;
+}
+
+.performance__container {
+    max-width: 1080px;
+}
+
+.performance__flex__box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: center;
+    gap: 10px;
+}
+
+.PF__card {
+    background: #fff;
+    border-radius: 24px;
+    display: flex;
+    width: 100%;
+    gap: 23px;
+    align-items: center;
+    padding: 22px 51px 20px 30px;
+}
+
+.PF__card__img>img {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    object-fit: cover;
+    justify-content: center;
+}
+
+.PF__card__img>img {
+    display: flex;
+}
+
+.PF__card__content__box {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.PF__card__title {
+    font-family: Satoshi Variable;
+    font-size: 16px;
+    font-weight: 700;
+    color: #202020;
+    line-height: 21.6px;
+}
+
+.PF__card__text {
+    font-family: Satoshi Variable;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18.9px;
+    color: #575E6A;
+}
+
+.opportunities {
+    padding: 24px;
+    background: white;
+    border-radius: 24px;
+}
+
+.opportunities__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Satoshi Variable;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32.4px;
+    color: #202020;
+    gap: 4px;
+    margin-bottom: 35px;
+}
+
+.O__title__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+}
+
+.O__flex__box {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 35px;
+}
+
+.OFB__card {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 6px;
+}
+
+.OFB__card__icon {
+    width: 32px;
+    height: 32px;
+    display: flex;
+}
+
+.OFB__card__title {
+    font-family: Satoshi Variable;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18.9px;
+    color: #575E6A;
+}
+
+.O__info__flex__box {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 10px;
+}
+
+.OIF__card {
+    width: 100%;
+    padding: 16px 11px 36px 15px;
+    border: 1px solid #F2F2F2;
+    border-radius: 24px;
+    flex-grow: 1;
+}
+
+.OIF__card:last-child {
+    padding-bottom: 15px;
+}
+
+.OIF__card__icon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px;
+    background: #EDF4FF;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.OIF__card__title {
+    font-family: Satoshi Variable;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27px;
+    color: #6AB8FF;
+    margin-bottom: 2px;
+}
+
+.OIF__card__text {
+    font-family: Satoshi Variable;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18.2px;
+    color: #575e6a;
+}
+
+/* *** START SECTION *** */
+
+.start {
+    padding: 15px 0 15px 0;
+    background: #FAFAFC;
+}
+
+.start__container {
+    max-width: 1080px;
+}
+
+.start__title {
+    font-family: Satoshi Variable;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32.4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.start__title--icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.start__steps--box {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.start__steps {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 36px;
+}
+
+.start__steps--img {
+    max-width: 259px;
+    width: 100%;
+    min-height: 216px;
+    display: flex;
+}
+
+.start__steps--img>img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.start__steps--content {
+    max-width: 720px;
+    width: 100%;
+}
+
+.start__steps--content__title {
+    font-family: Satoshi Variable;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21.6px;
+    color: #202020;
+    margin-bottom: 10px;
+}
+
+.start__steps--content__text {
+    font-family: Satoshi Variable;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18.9px;
+    color: #575E6A;
+    margin-bottom: 24px;
+}
+
+.start__steps--dropdown__box {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.steps__dropdown {
+    border: 1px solid #0000001A;
+    padding: 19px 16px;
+    border-radius: 12px;
+}
+
+.steps__dropdown--main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0px;
+    transition: all 0.3s;
+}
+
+.steps__dropdown--title {
+    font-family: Satoshi Variable;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21.6px;
+    color: #202020;
+}
+
+.steps__dropdown--arrow {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.steps__dropdown--text {
+    font-family: Satoshi Variable;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18.9px;
+    color: #575E6A;
+    height: 0;
+    overflow: hidden;
+}
+
+/* Safety */
+
+.safety {
+    padding: 15px 0 12.5px 0;
+    background: #FAFAFC;
+}
+
+.safety__container {
+    max-width: 1080px;
+}
+
+.start__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-family: Satoshi Variable;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32.4px;
+    color: #202020;
+}
+
+.start__title--icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+}
+
+.safety__flex__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 24px;
+}
+
+.safety__dropdown {
+    background: #FFF;
+    padding: 24px;
+    border-radius: 16px;
+}
+
+.safety__dropdown--main {
+    display: flex;
+    align-items: center;
+    font-family: Satoshi Variable;
+    font-size: 16px;
+    font-weight: 700;
+    color: #202020;
+    line-height: 21.6px;
+}
+
+.safety__dropdown--main__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+}
+
+.safety__dropdown--main__arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    margin-left: auto;
+}
+
+.safety__dropdown--text {
+    font-family: Satoshi Variable;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18.9px;
+    color: #575E6A;
+    height: 0;
+    overflow: hidden;
+}
+
+.safety__earnings--box {
+    background: white;
+    padding: 24px 48px 55px;
+    border-radius: 24px;
+}
+
+.safety__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-family: Satoshi Variable;
+    font-size: 24px;
+    font-weight: 700;
+    color: #202020;
+    margin-bottom: 8px;
+    line-height: 32.4px;
+}
+
+.safety__title--icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+}
+
+.safety__text {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 590px;
+    font-family: Satoshi Variable;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18.9px;
+    color: #575E6A;
+    margin-bottom: 52px;
+}
+
+.safety__rating__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 38px;
+}
+
+.rating__card--img {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.rating__card--title {
+    font-family: Satoshi Variable;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21.6px;
+    color: #202020;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.rating__card--text {
+    font-family: Satoshi Variable;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18.9px;
+    text-align: center;
+    color: #575E6A;
+}
+
+.succes {
+    padding: 12.5px 0 5px;
+    background: #FAFAFC;
+}
+
+.succes__container {
+    border: 1px solid #E1E1E3;
+    max-width: 1040px;
+    padding: 24px 35px 41px;
+    border-radius: 24px;
+}
+
+.succes__title {
+    font-family: Satoshi Variable;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32.4px;
+    color: #202020;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 35px;
+}
+
+.succes__title--icon {
+    width: 40px;
+    height: 40px;
+}
+
+.succes__grid__box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 12px;
+}
+
+.grid__box--card {
+    display: flex;
+    align-items: start;
+    gap: 12px;
+}
+
+.grid__box--card__icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid__box--card__content {
+    width: 100%;
+}
+
+.box__content--title {
+    font-family: Satoshi Variable;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21.6px;
+    color: #202020;
+    margin-bottom: 6px;
+}
+
+.box__content--text {
+    font-family: Satoshi Variable;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18.9px;
+    color: #575E6A;
+}
+
+.p__reg {
+    background: #FAFAFC;
+    padding: 5px 0 54px;
+}
+
+.p__reg__container {
+    max-width: 1080px;
+}
+
+.p__reg--dropdown {
+    border: 1px solid #E1E1E3;
+    border-radius: 16px;
+    padding: 17px 24px;
+    margin-bottom: 10px;
+}
+
+.p__reg--dropdown~.p__reg--dropdown {
+    margin-bottom: 30px;
+}
+
+.p__reg--dropdown__main {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: none;
+    border: none;
+    margin-bottom: 17px;
+}
+
+.reg__drop__icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    margin-right: 12px;
+}
+
+.reg__drop__title {
+    font-family: Satoshi Variable;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32.4px;
+    color: #202020;
+}
+
+.reg__drop__text {
+    font-family: Satoshi Variable;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18.9px;
+    color: #575E6A;
+}
+
+.reg__drop__arrow {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    margin-left: auto;
+}
+
+.p__getStarted {
+    background-image: url(../img/Customers/BG.png);
+    background-size: cover;
+    height: 153px;
+    background-position: center center;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    flex-direction: column;
+}
+
+.p__getStarted__title {
+    font-family: Satoshi Variable;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 38.4px;
+    color: #202020;
+}
+
+.p__getStarted__btn {
+    padding: 14px 24px;
+    background: #202020;
+    border-radius: 12px;
+    border: none;
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21.86px;
+    color: white;
+    transition: all 0.3s;
+}
+
+.p__getStarted__btn:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .performance__flex__box {
+        gap: 5px;
+    }
+
+    .PF__card {
+        padding: 53px 12px 15px 15px;
+        flex-direction: column;
+        position: relative;
+        gap: 20px;
+        border-radius: 16px;
+    }
+
+    .PF__card:first-child {
+        padding: 53px 29px 31px 15px;
+    }
+
+    .PF__card__title {
+        position: absolute;
+        top: 20px;
+        width: 100%;
+        left: 0;
+        text-align: center;
+    }
+
+    .PF__card__img>img {
+        width: 77px;
+        height: 77px;
+    }
+
+    .PF__card__text {
+        font-size: 12px;
+    }
+
+    .opportunities__title {
+        font-size: 16px;
+        line-height: 21.6px;
+        gap: 4px;
+        margin-bottom: 12px;
+    }
+
+    .O__title__icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .opportunities {
+        border-radius: 12px;
+        padding: 15px;
+    }
+
+    .O__flex__box {
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+
+    .OFB__card {
+        gap: 6px;
+        justify-content: start;
+        display: grid;
+    }
+
+    .OFB__card__title {
+        font-size: 12px;
+    }
+
+    .O__info__flex__box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 1fr;
+        align-items: stretch;
+        gap: 5px;
+    }
+
+    .OIF__card__title {
+        font-size: 16px;
+        display: inline-flex;
+    }
+
+    .OIF__card__icon {
+        display: inline-flex;
+        margin-right: 8px;
+        width: 30px;
+        height: 30px;
+        margin-bottom: 16px;
+    }
+
+    .OIF__card__text {
+        font-size: 12px;
+    }
+
+    .OIF__card {
+        padding: 12px;
+        flex-grow: 1;
+        border-radius: 20px;
+    }
+
+    .performance {
+        padding: 14px 0 10px;
+    }
+
+    .start {
+        padding: 10px 0 7px;
+    }
+
+    .start__title {
+        font-size: 16px;
+        line-height: 21.6px;
+        margin-bottom: 15px;
+    }
+
+    .start__title--icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .start__steps {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .start__steps--img {
+        width: 100%;
+        max-width: 100%;
+        height: 138px;
+        min-height: min-content;
+        border-radius: 24px;
+        overflow: hidden;
+    }
+
+    .start__steps--img>img {
+        display: flex;
+        width: 100%;
+        height: 138px;
+        object-fit: contain;
+        background: white;
+    }
+
+    .start__steps--content__title {
+        font-size: 14px;
+        line-height: 18.9px;
+        margin-bottom: 5px;
+    }
+
+    .start__steps--content__text{
+        font-size: 12px;
+        line-height: 16.2px;
+        margin-bottom: 10px;
+    }
+
+    .steps__dropdown{
+        padding: 12px 15px;
+    }
+
+    .steps__dropdown--title{
+        font-size: 14px;
+    }
+
+    .steps__dropdown--text{
+        font-size: 12px;
+    }
+}
