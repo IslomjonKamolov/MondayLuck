@@ -2951,6 +2951,7 @@ ol {
     .menu a {
         color: white;
         font-family: Satoshi Variable;
+        font-size: 18px;
         text-decoration: none;
     }
 
