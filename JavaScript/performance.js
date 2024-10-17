@@ -181,3 +181,14 @@ const searchPlaceholderFun = () => {
 searchPlaceholderFun()
 
 window.addEventListener('resize', searchPlaceholderFun)
+
+// LANG changing function
+
+const lang = document.querySelector('.lang__type')
+const lang__list = document.querySelectorAll('.lang__item')
+
+lang__list.forEach((item, index) => {
+    item.addEventListener('click', () => {
+      lang.textContent = lang__list[index].textContent
+    })
+})
