@@ -2706,7 +2706,7 @@ ol {
     opacity: 0.8;
 }
 
-.menu{
+.menu {
     display: none;
 }
 
@@ -2855,46 +2855,47 @@ ol {
         margin-bottom: 5px;
     }
 
-    .start__steps--content__text{
+    .start__steps--content__text {
         font-size: 12px;
         line-height: 16.2px;
         margin-bottom: 10px;
     }
 
-    .steps__dropdown{
+    .steps__dropdown {
         padding: 12px 15px;
     }
 
-    .steps__dropdown--title{
+    .steps__dropdown--title {
         font-size: 14px;
     }
 
-    .steps__dropdown--text{
+    .steps__dropdown--text {
         font-size: 12px;
     }
 
-    .safety, .succes{
+    .safety,
+    .succes {
         display: none;
     }
 
-    .p__reg{
+    .p__reg {
         padding: 8px 0 34px;
     }
 
-    .reg__drop__title{
+    .reg__drop__title {
         font-size: 16px;
     }
 
-    .reg__drop__text{
+    .reg__drop__text {
         font-size: 12px;
     }
 
-    .p__reg--dropdown{
+    .p__reg--dropdown {
         margin-bottom: 8px;
         padding: 15px;
     }
 
-    .p__reg--dropdown~.p__reg--dropdown{
+    .p__reg--dropdown~.p__reg--dropdown {
         margin-bottom: 25px;
     }
 
@@ -2904,25 +2905,26 @@ ol {
         height: auto;
     }
 
-    .p__getStarted__title{
+    .p__getStarted__title {
         max-width: 172px;
     }
 
-    .p__getStarted__btn{
+    .p__getStarted__btn {
         width: 100%;
         padding: 14px;
     }
+
     .menu-container {
         position: relative;
     }
-    
+
     .menu-toggle {
         font-size: 24px;
         cursor: pointer;
         background: none;
         border: none;
     }
-    
+
     .menu {
         display: block;
         position: fixed;
@@ -2936,21 +2938,22 @@ ol {
         padding: 20px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
-    
+
     .menu ul {
         list-style: none;
         padding: 0;
     }
-    
+
     .menu li {
         margin: 15px 0;
     }
-    
+
     .menu a {
         color: white;
+        font-family: Satoshi Variable;
         text-decoration: none;
     }
-    
+
     .close-btn {
         font-size: 24px;
         color: white;
@@ -2959,7 +2962,3 @@ ol {
         cursor: pointer;
     }
 }
-
-
-
-
